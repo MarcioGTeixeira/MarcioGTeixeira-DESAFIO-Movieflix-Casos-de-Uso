@@ -19,6 +19,7 @@ public class ReviewDTO implements Serializable {
 
     @NotNull(message = "Campo requerido")
     private Long movieId;       
+    
     private Long userId;
     private String userName;
     private String userEmail;
@@ -26,11 +27,13 @@ public class ReviewDTO implements Serializable {
     public ReviewDTO() {
     }
 
-    public ReviewDTO(Long id, String text, Long movieId, Long userId) {
+    public ReviewDTO(Long id, String text, Long movieId, Long userId, String userName, String userEmail) {
         this.id = id;
         this.text = text;
         this.movieId = movieId;
         this.userId = userId;
+        this.userName = userName;
+        this.userEmail = userEmail;
     }
 
     public ReviewDTO(Review entity) {
@@ -38,6 +41,8 @@ public class ReviewDTO implements Serializable {
         this.text = entity.getText();
         this.movieId = entity.getMovie().getId();
         this.userId = entity.getUser().getId();
+        this.userName = entity.getUser().getName();
+        this.userEmail = entity.getUser().getEmail();
     }
     
     

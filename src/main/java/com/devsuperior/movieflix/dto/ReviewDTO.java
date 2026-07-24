@@ -43,6 +43,7 @@ public class ReviewDTO implements Serializable {
         this.userId = entity.getUser().getId();
         this.userName = entity.getUser().getName();
         this.userEmail = entity.getUser().getEmail();
+        
     }
     
     

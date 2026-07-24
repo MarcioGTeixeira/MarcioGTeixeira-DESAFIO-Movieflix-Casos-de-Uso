@@ -1,4 +1,4 @@
-# :construction: - Project Movieflix
+# :Construção: - Project Movieflix
 
 - Implementação das funcionalidades necessárias para que os teste do projeto passem;
 - Desenvolvimento TDD de API Rest com Java e Spring Boot;
@@ -54,7 +54,7 @@ https://www.figma.com/file/6JQVnxKgKtVHLleSBBgRin/MovieFlix-front-listagem?type=
 
 ##
 
-- [] - GET /genres deve retornar 401 para token inválido;
+- [x] - GET /genres deve retornar 401 para token inválido;
 - [x] - GET /genres deve retornar 200 com todos gêneros para VISITOR logado;
 - [x] - GET /genres deve retornar 200 com todos gêneros para MEMBER logado;
 - [x] - GET /movies/{id} deve retornar 401 para token inválido;
@@ -67,5 +67,5 @@ https://www.figma.com/file/6JQVnxKgKtVHLleSBBgRin/MovieFlix-front-listagem?type=
 - [x] - GET /movies?genreId={id} deve retornar 200 com página ordenada de filmes filtrados por gênero;
 - [x] - POST /reviews deve retornar 401 para token inválido;
 - [x] - POST /reviews deve retornar 403 para VISITOR logado;
-- [] - POST /reviews deve retornar 201 com objeto inserido para MEMBER logado e dados válidos;
+- [x] - POST /reviews deve retornar 201 com objeto inserido para MEMBER logado e dados válidos;
 - [x] - POST /reviews deve retornar 422 para MEMBER logado e dados inválidos;
